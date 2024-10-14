@@ -16,6 +16,7 @@ import Foundation
 
 /// A text output stream which writes to standard error
 struct StdErrOutputStream: TextOutputStream {
+    // Test comment added
     /// Writes a string to standard error.
     /// - Parameter string: String to be written.
     public mutating func write(_ string: String) { fputs(string, stderr) }
